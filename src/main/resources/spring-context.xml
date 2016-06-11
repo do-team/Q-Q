@@ -9,8 +9,12 @@
     </bean>
 
     <bean id="groupDAO" class="dao.impl.GroupDAOImpl" parent="abstractDao" />
+    <bean id="messageDAO" class="dao.impl.MessageDAOImpl" parent="abstractDao" />
 
     <bean id="groupService" class="service.impl.GroupServiceImpl">
         <constructor-arg name="dao" ref="groupDAO" />
+    </bean>
+    <bean id="messageService" class="service.impl.MessageServiceImpl">
+        <constructor-arg name="dao" ref="messageDAO" />
     </bean>
 </beans>

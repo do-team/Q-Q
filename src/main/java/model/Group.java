@@ -13,6 +13,10 @@ public class Group {
 	private Group() {
 	}
 
+	public Group(Integer groupId) {
+		this.groupId = groupId;
+	}
+
 	public Group(Integer groupId, String name, String description, Integer status, DateTime insertTimeStamp) {
 		super();
 		this.groupId = groupId;

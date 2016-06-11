@@ -27,6 +27,10 @@
             <property-name>groupService</property-name>
             <value>#{groupService}</value>
         </managed-property>
+        <managed-property>
+            <property-name>messageService</property-name>
+            <value>#{messageService}</value>
+        </managed-property>
     </managed-bean>
 
 </faces-config>
