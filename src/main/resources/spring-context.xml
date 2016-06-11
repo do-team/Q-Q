@@ -8,9 +8,9 @@
         <property name="dataSource" ref="dataSource" />
     </bean>
 
-    <bean id="userDAO" class="dao.impl.UserDAOImpl" parent="abstractDao" />
+    <bean id="groupDAO" class="dao.impl.GroupDAOImpl" parent="abstractDao" />
 
-    <bean id="userService" class="service.impl.UserServiceImpl">
-        <constructor-arg name="dao" ref="userDAO" />
+    <bean id="groupService" class="service.impl.GroupServiceImpl">
+        <constructor-arg name="dao" ref="groupDAO" />
     </bean>
 </beans>

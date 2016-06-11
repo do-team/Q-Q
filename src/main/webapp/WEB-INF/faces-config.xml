@@ -24,8 +24,8 @@
         <managed-bean-class>bean.MainBean</managed-bean-class>
         <managed-bean-scope>view</managed-bean-scope>
         <managed-property>
-            <property-name>userService</property-name>
-            <value>#{userService}</value>
+            <property-name>groupService</property-name>
+            <value>#{groupService}</value>
         </managed-property>
     </managed-bean>
 

@@ -8,48 +8,47 @@ import java.util.List;
 
 import javax.annotation.PostConstruct;
 
-import model.User;
-import service.UserService;
+import model.Group;
+import service.GroupService;
 
 public class MainBean implements java.io.Serializable {
 
-    UserService userService;
-    List<User> users;
+	GroupService groupService;
+	List<Group> groups;
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 3095593138292372749L;
 
-    /**
-     * 
-     */
-    private static final long serialVersionUID = 3095593138292372749L;
+	// TODO private static final Logger LOG =
+	// LoggerFactory.getLogger(MainBean.class);
 
-    // TODO private static final Logger LOG = LoggerFactory.getLogger(MainBean.class);
+	public static final String MAIN_TITLE = "Main";
+	public static final String GENERAL_TITLE_PREFIX = "Q-Q :: ";
 
-    public static final String MAIN_TITLE = "Main";
-    public static final String GENERAL_TITLE_PREFIX = "Q-Q :: ";
+	public MainBean() {
 
+	}
 
-    public MainBean() {
+	@PostConstruct
+	public void init() {
+	}
 
-    }
+	public String getMainTitle() {
+		return GENERAL_TITLE_PREFIX + MAIN_TITLE;
+	}
 
-    @PostConstruct
-    public void init() {
-    }
-    
-    public String getMainTitle() {
-        return GENERAL_TITLE_PREFIX + MAIN_TITLE;
-    }
+	public void setGroupService(GroupService groupService) {
+		this.groupService = groupService;
+	}
 
-    public void setUserService(UserService userService) {
-        this.userService = userService;
-    }
-
-    public List<User> getUsers() {
-        if (users == null) {
-            users = new ArrayList<User>();
-        }
-        users = userService.listAllUsers();
-        return users;
-    }
+	public List<Group> getGroups() {
+		if (groups == null) {
+			groups = new ArrayList<Group>();
+		}
+		groups = groupService.listAllGroups();
+		return groups;
+	}
 
 }
