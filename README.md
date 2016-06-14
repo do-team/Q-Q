@@ -10,4 +10,3 @@ Users can vote by starring each question, to allow focus to most interesting que
 
 Might be also used as meeting agenda, meeting minutes, reminder or as a quick poll, feel free to find your best use of it.
 
-TEST
