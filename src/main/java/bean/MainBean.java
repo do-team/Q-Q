@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
+import javax.faces.event.ActionEvent;
 
 import model.Group;
 import model.Message;
@@ -65,11 +66,22 @@ public class MainBean implements java.io.Serializable {
 	}
 
 	public List<Message> getMessages() {
-		if (messages == null) {
-			messages = new ArrayList<Message>();
-		}
-		messages = messageService.listAllMessages();
-		return messages;
+        if (messages == null) {
+            messages = new ArrayList<Message>();
+        }
+
+        return messages;
+    }
+
+    public List<Message> getMessages(Integer groupId) {
+        messages = messageService.listAllMessages(groupId);
+        return messages;
 	}
 
+    public void readMessages(ActionEvent ae) {
+        Integer groupId = (Integer) ae.getComponent().getAttributes().get("groupId");
+
+        // reread the Messages
+        getMessages(groupId);
+    }
 }
