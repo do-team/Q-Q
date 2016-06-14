@@ -9,4 +9,6 @@ public interface MessageService {
 	List<Message> listAllMessages();
 
 	List<Message> listAllMessages(Integer groupId);
+
+    public Boolean insertNewMessage(Message message);
 }

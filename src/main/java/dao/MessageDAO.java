@@ -2,6 +2,8 @@ package dao;
 
 import java.util.List;
 
+import org.joda.time.DateTime;
+
 import model.Message;
 
 /**
@@ -11,4 +13,6 @@ import model.Message;
 public interface MessageDAO {
 
 	List<Message> listAllMessages(Integer groupId);
+
+    public Boolean insertNewMessage(Message message, DateTime now);
 }

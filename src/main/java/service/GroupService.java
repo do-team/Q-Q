@@ -8,4 +8,5 @@ public interface GroupService {
 
 	List<Group> listAllGroups();
 
+    public Boolean insertNewGroup(Group group);
 }

@@ -2,14 +2,50 @@ package model;
 
 import org.joda.time.DateTime;
 
-public class Message {
-	Integer msgId;
+public class Message implements java.io.Serializable {
+
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 7093588172630963344L;
+
+    Integer msgId;
 	Integer parentMsgId;
 	Group group;
 	String content;
 	Integer likesCnt;
-	Integer status;
+    Status status;
 	DateTime insertTimestamp;
+
+    public enum Status {
+        NEW("New", 0), CLOSED("Closed", 1);
+
+        private String name;
+        private int value;
+
+        private Status(String name, int value) {
+            this.name = name;
+            this.value = value;
+        }
+
+        public static Status getStatus(int value) {
+            switch (value) {
+            case 0:
+                return NEW;
+            case 1:
+                return CLOSED;
+            }
+            return NEW;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public int getValue() {
+            return value;
+        }
+    }
 
 	@SuppressWarnings("unused")
 	private Message() {
@@ -19,7 +55,7 @@ public class Message {
 		this.msgId = msgId;
 	}
 
-	public Message(Integer parentMsgId, Group group, String content, Integer likesCnt, Integer status) {
+    public Message(Integer parentMsgId, Group group, String content, Integer likesCnt, Status status) {
 		this.parentMsgId = parentMsgId;
 		this.group = group;
 		this.content = content;
@@ -27,7 +63,7 @@ public class Message {
 		this.status = status;
 	}
 
-	public Message(Integer msgId, Integer parentMsgId, Group group, String content, Integer likesCnt, Integer status,
+    public Message(Integer msgId, Integer parentMsgId, Group group, String content, Integer likesCnt, Status status,
 			DateTime insertTimestamp) {
 		super();
 		this.msgId = msgId;
@@ -79,11 +115,11 @@ public class Message {
 		this.likesCnt = likesCnt;
 	}
 
-	public Integer getStatus() {
+    public Status getStatus() {
 		return status;
 	}
 
-	public void setStatus(Integer status) {
+    public void setStatus(Status status) {
 		this.status = status;
 	}
 

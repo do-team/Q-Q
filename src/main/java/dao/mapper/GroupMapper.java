@@ -6,6 +6,7 @@ import java.sql.SQLException;
 import org.springframework.jdbc.core.RowMapper;
 
 import model.Group;
+import model.Group.Status;
 
 /**
  * @author salamar
@@ -47,7 +48,7 @@ public class GroupMapper implements RowMapper<Group> {
     	Integer groupId = rs.getInt(Column.GROUP_ID.getName());
     	String name = rs.getString(Column.NAME.getName());
     	String description = rs.getString(Column.DESCRIPTION.getName());
-    	Integer status = rs.getInt(Column.STATUS.getName());
+        Status status = Status.getStatus(rs.getInt(Column.STATUS.getName()));
     	// TODO read also the timestamp
     	
     	Group group = new Group(groupId, name, description, status, null);

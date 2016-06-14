@@ -7,6 +7,7 @@ import org.springframework.jdbc.core.RowMapper;
 
 import model.Group;
 import model.Message;
+import model.Message.Status;
 
 /**
  * @author salamar
@@ -47,7 +48,7 @@ public class MessageMapper implements RowMapper<Message> {
 		Group group = new Group(rs.getInt(Column.GROUP_ID.getName()));
 		String content = rs.getString(Column.CONTENT.getName());
 		Integer likesCnt = rs.getInt(Column.LIKES_CNT.getName());
-    	Integer status = rs.getInt(Column.STATUS.getName());
+        Status status = Status.getStatus(rs.getInt(Column.STATUS.getName()));
     	// TODO read also the timestamp
     	
 		Message message = new Message(msgId, parentMsgId, group, content, likesCnt, status, null);

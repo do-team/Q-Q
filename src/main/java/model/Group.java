@@ -2,12 +2,48 @@ package model;
 
 import org.joda.time.DateTime;
 
-public class Group {
-	Integer groupId;
+public class Group implements java.io.Serializable {
+
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 695845765639030411L;
+
+    Integer groupId;
 	String name;
 	String description;
-	Integer status;
+    Status status;
 	DateTime insertTimeStamp;
+
+    public enum Status {
+        NEW("New", 0), CLOSED("Closed", 1);
+
+        private String name;
+        private int value;
+
+        private Status(String name, int value) {
+            this.name = name;
+            this.value = value;
+        }
+
+        public static Status getStatus(int value) {
+            switch (value) {
+            case 0:
+                return NEW;
+            case 1:
+                return CLOSED;
+            }
+            return NEW;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public int getValue() {
+            return value;
+        }
+    }
 
 	@SuppressWarnings("unused")
 	private Group() {
@@ -17,7 +53,7 @@ public class Group {
 		this.groupId = groupId;
 	}
 
-	public Group(Integer groupId, String name, String description, Integer status, DateTime insertTimeStamp) {
+    public Group(Integer groupId, String name, String description, Status status, DateTime insertTimeStamp) {
 		super();
 		this.groupId = groupId;
 		this.name = name;
@@ -26,7 +62,7 @@ public class Group {
 		this.insertTimeStamp = insertTimeStamp;
 	}
 
-	public Group(String name, String description, Integer status) {
+    public Group(String name, String description, Status status) {
 		this.name = name;
 		this.description = description;
 		this.status = status;
@@ -56,11 +92,11 @@ public class Group {
 		this.description = description;
 	}
 
-	public Integer getStatus() {
+    public Status getStatus() {
 		return status;
 	}
 
-	public void setStatus(Integer status) {
+    public void setStatus(Status status) {
 		this.status = status;
 	}
 
