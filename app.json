@@ -1,0 +1,16 @@
+{
+  "name": "Q-Q",
+  "description": "Testing Heroku deployment.",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
