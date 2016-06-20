@@ -1,6 +1,6 @@
 {
   "name": "Q-Q",
-  "description": "Testing Heroku deployment.",
+  "description": "Queue of questions for you.",
   "scripts": {
   },
   "env": {
