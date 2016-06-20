@@ -33,7 +33,7 @@ There are dozens .Node dev IDE but three of them are preferred by community:
 
 
 #Todo
-- choose task board ASAP! (Fail Fast => switch if you think there is something better )
+
 - implement Postgresql database connection
 - implement seed for Postgresql viz data/index.js
 - implement provider for Postgresql
