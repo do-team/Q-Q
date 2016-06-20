@@ -1,6 +1,6 @@
 ﻿(function (eventsRestController) {
 
-    var model = require("../Data");
+    var model = require("../data");
 
     eventsRestController.init = function (app) {
         

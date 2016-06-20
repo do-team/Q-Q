@@ -1,6 +1,6 @@
 ﻿(function(mainController) {
     
-    var model = require("../Data");
+    var model = require("../data");
 
     mainController.init = function (app) {
         
