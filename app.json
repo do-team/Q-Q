@@ -1,16 +1,8 @@
 {
   "name": "Q-Q",
-  "description": "Queue of questions for you.",
-  "scripts": {
-  },
-  "env": {
-  },
-  "formation": {
-  },
-  "addons": [
-
-  ],
-  "buildpacks": [
-
-  ]
+  "description": "Node.js app with Postgres",
+  "repository": "https://github.com/do-team/Q-Q",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/nodejs"
 }
