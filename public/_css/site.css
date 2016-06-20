@@ -1,0 +1,222 @@
+@charset "utf-8";
+/*
+    must be in common.css
+*/
+#P2footer {
+  position: fixed;
+  bottom: 0;
+}
+/*must be in common.css*/
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.navigation {
+  position: relative;
+}
+.navigation > ul {
+  list-style: none;
+  display: block;
+  margin: 0 auto;
+}
+.navigation > ul > li {
+  margin-top: 9px;
+  float: left;
+  padding-left: 21px;
+}
+.navigation > ul > li > a {
+  color: #000;
+  -ms-opacity: 0.6;
+  opacity: 0.6;
+  font-size: 1em;
+  text-decoration: none;
+  font-family: 'Poiret One', cursive;
+}
+.navigation > ul > li > a.active {
+  color: #000;
+  -ms-opacity: 1;
+  opacity: 1;
+  border-bottom: 2px solid #fff;
+}
+.navigation > ul > li > a:hover {
+  color: #blue;
+  -ms-opacity: 1;
+  opacity: 1;
+}
+/*Buttons and links*/
+.buttonAsLink {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  font: inherit;
+  /*border is optional*/
+  border-bottom: 1px solid #444;
+  cursor: pointer;
+}
+/* This button was generated using CSSButtonGenerator.com */
+button {
+  -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background-color: #fcfcfc;
+  -webkit-border-top-left-radius: 7px;
+  -moz-border-radius-topleft: 7px;
+  border-top-left-radius: 7px;
+  -webkit-border-top-right-radius: 7px;
+  -moz-border-radius-topright: 7px;
+  border-top-right-radius: 7px;
+  -webkit-border-bottom-right-radius: 7px;
+  -moz-border-radius-bottomright: 7px;
+  border-bottom-right-radius: 7px;
+  -webkit-border-bottom-left-radius: 7px;
+  -moz-border-radius-bottomleft: 7px;
+  border-bottom-left-radius: 7px;
+  text-indent: 0;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  color: #777777;
+  font-family: 'Poiret One';
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  height: 50px;
+  line-height: 50px;
+  width: 100px;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 1px 1px 0px #ffffff;
+  margin: 10px 20px 10px 20px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #edf9ff;
+}
+.button:active {
+  position: relative;
+  top: 1px;
+}
+.searchButton {
+  width: 60px;
+  height: 30px;
+  border: 1px solid #dcdcdc;
+}
+.searchButton:hover {
+  background-color: #edf9ff;
+}
+.searchButton:active {
+  position: relative;
+  top: 1px;
+}
+/* This button was generated using CSSButtonGenerator.com */
+.standardButton {
+  -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background-color: #fcfcfc;
+  -webkit-border-top-left-radius: 7px;
+  -moz-border-radius-topleft: 7px;
+  border-top-left-radius: 7px;
+  -webkit-border-top-right-radius: 7px;
+  -moz-border-radius-topright: 7px;
+  border-top-right-radius: 7px;
+  -webkit-border-bottom-right-radius: 7px;
+  -moz-border-radius-bottomright: 7px;
+  border-bottom-right-radius: 7px;
+  -webkit-border-bottom-left-radius: 7px;
+  -moz-border-radius-bottomleft: 7px;
+  border-bottom-left-radius: 7px;
+  text-indent: 0;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  color: #777777;
+  font-family: 'Poiret One';
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  width: 100px;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 1px 1px 0px #ffffff;
+  margin: 10px 5px 10px 5px;
+  cursor: pointer;
+}
+.standardButton:hover {
+  background-color: #edf9ff;
+}
+.standardButton:active {
+  position: relative;
+  top: 1px;
+}
+input[type='text'] {
+  -webkit-appearance: none;
+  -webkit-background-clip: border-box;
+  -webkit-background-origin: padding-box;
+  -webkit-background-size: auto;
+  -webkit-font-smoothing: auto;
+  -webkit-rtl-ordering: logical;
+  -webkit-transition-delay: 0s;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-property: border-color;
+  -webkit-transition-timing-function: ease;
+  -webkit-user-select: text;
+  -webkit-writing-mode: horizontal-tb;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: #ffffff;
+  background-image: none;
+  background-origin: padding-box;
+  background-size: auto;
+  border-bottom-color: #b3b3b3;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0px;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: #b3b3b3;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: #b3b3b3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: #b3b3b3;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  color: #333333;
+  cursor: auto;
+  display: inline-block;
+  font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  height: 30px;
+  letter-spacing: 0.110039994120598px;
+  line-height: 14px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 25px;
+  padding-top: 0px;
+  position: relative;
+  text-align: start;
+  text-indent: 10px;
+  text-overflow: ellipsis;
+  text-shadow: none;
+  text-transform: none;
+  transition-delay: 0s;
+  transition-duration: 0.3s;
+  transition-property: border-color;
+  transition-timing-function: ease;
+  white-space: normal;
+  width: 182px;
+  word-spacing: 0px;
+  writing-mode: lr-tb;
+}

@@ -1,0 +1,260 @@
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  height: 100%;
+}
+/* LESS */
+body {
+  margin: 0;
+  overflow: visible;
+  width: 100%;
+}
+body > .container-fluid {
+  padding-top: 45px;
+  padding-bottom: 50px;
+}
+.container-fluid {
+  min-height: 100%;
+  position: relative;
+  width: 100%;
+  overflow: visible;
+}
+.slider {
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: -100;
+  min-width: 100%;
+  background: url("../img/FrankfurtSky.jpg") no-repeat center center scroll;
+  background-size: cover;
+}
+.slider #slide1 video {
+  min-width: 100%;
+  position: relative;
+  vertical-align: middle;
+  display: table-row;
+}
+#MiddleButton {
+  display: inline;
+  z-index: 0;
+  text-align: center;
+}
+#MiddleButton .content {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding-top: 10px;
+  vertical-align: central;
+  z-index: -1;
+}
+#MiddleButton .content div {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  float: left;
+  z-index: 400;
+  opacity: 0.3;
+}
+#MiddleButton .content #Arrow {
+  padding-left: 50%;
+  box-sizing: content-box;
+}
+.button {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  margin: 5em auto;
+  position: relative;
+  top: 50px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px 10px;
+  width: 100%;
+  height: 30px;
+  background: #fc3;
+  border: 1px solid #fc3;
+  overflow: hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.button:hover,
+.button:active {
+  text-decoration: none;
+  color: #fc3;
+  border-color: #fc3;
+  background-color: rgba(0, 0, 0, 0);
+}
+.heading {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 26px;
+}
+.text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  text-align: left;
+  float: left;
+  max-width: 35%;
+  padding: 25px;
+}
+.black-text {
+  color: #111;
+}
+.white-text {
+  color: #fff;
+}
+.white-background {
+  background-color: #fff;
+}
+.picture1 {
+  float: left;
+  max-width: 50%;
+  padding-left: 25px;
+  padding-top: 25px;
+  box-sizing: content-box;
+}
+.picture2 {
+  float: right;
+  width: 65%;
+  max-width: 450px;
+  padding-top: 25px;
+}
+.module {
+  position: relative;
+  height: 100%;
+  z-index: 0;
+  text-align: center;
+  display: block;
+}
+.module .content {
+  position: relative;
+  width: 1024px;
+  margin: 0 auto;
+  display: inline-block;
+  padding-top: 80px;
+  vertical-align: central;
+  padding-bottom: 80px;
+}
+#top {
+  position: relative;
+  width: 100%;
+  height: 47px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ccc;
+}
+img {
+  max-width: 100%;
+}
+#candidates {
+  max-height: 650px;
+}
+a img {
+  border: 0;
+}
+.floatRight {
+  float: right;
+}
+video {
+  display: inline-block;
+}
+#DividendsModule {
+  background: url("../img/EMIR.jpg") no-repeat center center scroll;
+  /*background-color:rebeccapurple;*/
+  background-size: cover;
+  min-height: 550px;
+  max-height: 570px;
+}
+/*      ANIMATION   */
+.textPopup {
+  position: absolute;
+  font-family: 'Poiret One';
+  bottom: 30px;
+  /*left: 3%;*/
+  left: 45px;
+  margin-top: 25px;
+  font-size: 8em;
+  color: white;
+  z-index: 100;
+  opacity: 0;
+  text-align: center;
+  -webkit-animation: fadein 1s 0.5s 1 ease-in-out;
+  -moz-animation: fadein 1s 0.5s 1 ease-in-out;
+  -ms-animation: fadein 1s 0.5s 1 ease-in-out;
+  -o-animation: fadein 1s 0.5s 1 ease-in-out;
+  animation: fadein 1s 0.5s 1 ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.textPopup2 {
+  position: absolute;
+  font-family: 'Poiret One';
+  bottom: 130px;
+  /*left: 8%;*/
+  left: 125px;
+  margin-top: 10px;
+  font-size: 1.5em;
+  color: white;
+  z-index: 100;
+  opacity: 0;
+  text-align: center;
+  -webkit-animation: fadein 2s 1.5s 1 ease-in-out;
+  -moz-animation: fadein 2s 1.5s 1 ease-in-out;
+  -ms-animation: fadein 2s 1.5s 1 ease-in-out;
+  -o-animation: fadein 2s 1.5s 1 ease-in-out;
+  animation: fadein 2s 1.5s 1 ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

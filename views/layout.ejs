@@ -1,0 +1,45 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <title><%- title %></title>
+    <link href="_css/site.start.min.css" rel="stylesheet" />
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/underscore/underscore-min.js"></script>
+</head>
+<body>
+    <iframe id='manifest_iframe_hack'
+            style='display: none;'
+            src='temporary_manifest_hack.html'></iframe>
+
+
+    <nav class="P2siteNavigation white-background">
+        <ul class="P2nav white-background black-text">
+            <li id="P2homeButton" class="floatLeft">
+                <a id="P2logo" href="/">DBReminder</a>
+            </li>
+            <li class="floatLeft">
+                <a href='/events'>Events</a>
+            </li>
+            <li class="floatLeft">
+            </li>
+            <li class="floatLeft">
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid">
+       
+        <%- body %>
+
+        <div id="P2footer">
+            <div id="copyright"><img src="img/logoFull.png"  style="height:40px" /></div>
+        </div>
+    </div>
+    <script src="lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+</body>
+</html>

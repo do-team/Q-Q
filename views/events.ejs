@@ -1,0 +1,55 @@
+<% layout('layout.ejs') %>
+<link href="_css/site.min.css" rel="stylesheet" />
+<link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<form method="post" >
+ <div id="main">
+
+        <div class="navigation row">
+            <ul>
+                <li><a href="/events">Townhall's</a></li>
+                <li><a href="/events">Conferences</a></li>
+            </ul>
+        </div>  
+
+
+      <!-- todo: move to  individual component -->
+      <div class="row">
+            <div class="col-md-8"></div>
+            <div class="col-md-4">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default searchButton" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+  <!-- todo:  split following code into individual components -->
+        <div>
+        <% events.forEach(function(category) { %>
+          <div class="row">
+             <div class="col-md-4">
+                <h1><%= category.name %></h1>
+             </div>  
+           </div> 
+           <% category.values.forEach(function(event) { %>
+              <div class="row">
+                 <div class="col-md-4">
+                    <h4><%=event.name%> (<%=event.date%>)</h4>
+                 </div>
+              </div>   
+                <div class="row">
+                  <div class="col-md-8">
+                      <h6><%=event.description%></h6>
+                   </div>
+                </div>
+                <div class="row" style="margin-bottom:25px;">
+                        <div class="col-md-1"><input type="button" class="standardButton" value="Comments" /></div>
+                </div>    
+           <% }); %>   
+         <% }); %>
+         </div>
+ </div>
+</form>

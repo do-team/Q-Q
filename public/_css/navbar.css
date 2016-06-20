@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* Mixins */
+/* Styling */
+body,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.P2siteNavigation {
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  border-width: 0;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  display: block;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  border: 0 none;
+  height: auto;
+  border-bottom: 1px solid #cacaca;
+  top: 0;
+}
+.P2siteNavigation .P2nav {
+  position: relative;
+  text-align: left;
+  list-style: none;
+  zoom: 1;
+  z-index: 999;
+  margin: 0 auto 0 auto;
+  width: 1024px;
+  display: block;
+}
+.P2siteNavigation .P2nav:after {
+  clear: both;
+}
+.P2siteNavigation .P2nav ul {
+  list-style: none;
+  width: 100%;
+  left: 50%;
+  position: relative;
+  text-align: center;
+}
+.P2siteNavigation .P2nav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #111;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  height: auto;
+  line-height: 45px;
+  *zoom: 1;
+}
+.P2siteNavigation .P2nav > li {
+  border-top: 1px solid #fff;
+  z-index: 200;
+}
+.P2siteNavigation .P2nav li p {
+  z-index: 100;
+  text-align: right;
+}
+.P2siteNavigation .P2nav:before,
+.P2siteNavigation .P2nav:after {
+  content: " ";
+  display: table;
+}
+.black-text {
+  color: #111;
+}
+.white-text {
+  color: #fff;
+}
+.white-background {
+  background-color: #fff;
+}
+.floatRight {
+  float: right;
+}
+.floatLeft {
+  float: left;
+}
+.displayBlock {
+  display: block;
+}
+.userRoleText {
+  font-size: 13px;
+  color: #D3CAAA;
+  margin: 0;
+  padding-top: 5px;
+  max-width: 370px;
+}
+#P2footer {
+  background-color: white;
+  background-position: 0 0;
+  -webkit-background-clip: border-box;
+  -moz-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-origin: padding-box;
+  -moz-background-origin: padding-box;
+  background-origin: padding-box;
+  background-size: auto auto;
+  border-top: 5px solid #EEE;
+  color: #CCC;
+  height: 50px;
+  padding: 0px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+#P2footer > #copyright {
+  float: right;
+  max-height: 40px;
+}
+#P2footer .footerImage img {
+  padding-top: 0;
+  max-height: 40px;
+  float: left;
+}
+/*# sourceMappingURL=navBar.css.map */

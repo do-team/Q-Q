@@ -1,0 +1,14 @@
+{
+  "name": "dbreminder01",
+  "private": true,
+  "dependencies": {
+    "jquery": "2.2.2",
+    "modernizr": "3.3.1",
+    "jquery-validation-unobtrusive": "3.2.6",
+    "smooth-scroll": "1.0.1",
+    "underscore": "1.8.3",
+    "react": "0.14.8",
+    "chartjs": "2.0.2",
+    "bootstrap": "3.3.6"
+  }
+}

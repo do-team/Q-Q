@@ -1,0 +1,87 @@
+﻿<% layout('layout.ejs') %>
+<!--[if IE 8]>
+
+     <style type='text/css'>
+   .button:hover, .button:active
+   {
+     text-decoration: none;
+     color: #fc3;
+     border-color: #fc3;
+     background-color: #fff;
+   }
+
+
+       }
+   .slider {
+       min-width:1024px;
+    padding-top: 50px;
+       }
+   .slider #slide1 video{
+   min-width: 1024px;
+       }
+
+   .slider #slide1 video img {
+   min-width: 1024px;
+    min-height: 750px;
+    }
+
+   .module {
+       min-width: 1024px;
+       }
+   .module .content {
+       min-width: 1024px;
+       }
+
+     </style>
+     <![endif]-->
+
+<div class="slider">
+    <div id="slide1">
+
+        <div class="textPopup">Forum</div>
+        <div class="textPopup2">DEUTSCHE BOERSE GROUP</div>
+
+        <video autoplay muted loop>
+            <source src="video/title720.webm" type='video/webm; codecs="vp8.0, vorbis"' >
+            <source src="video/title720.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' >
+        </video>
+    </div>
+</div>
+
+<div id="MiddleButton">
+    <div class="content">
+        <div id="mailTo">
+            <a href="mailto:support-forum@deutsche-boerse.com?subject=Forum request"><img src="img/mailto.png" alt="Send us an email!" /></a>
+        </div>
+        <div id="Arrow">
+            <a href="#module01" class="scroll"> <img src="img/arrow.png" alt="There is more below" /></a>
+        </div>
+    </div>
+</div>
+
+<div id="candidates" class="module white-background">
+    <a name="module01"></a>
+    <div id="top" class="white-background"></div>
+    <div class="content">
+
+        <div class="text black-text">
+            <h4 class="heading">
+                Forum
+            </h4>
+            <p>
+                Ask questions, get answers, help others and connect with people who have similar interests.
+            </p>
+            <p>
+                <a href="/events" class="button" id="buttonCandidates">
+                    <span>Events</span>
+                </a>
+            </p>
+        </div>
+
+        <div class="picture1">
+            <img id="PictureiMacMockUp" src="img/imac.png" alt="Elements module" />
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript" src="javascripts/SmoothScroll.js"></script>

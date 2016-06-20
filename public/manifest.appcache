@@ -1,0 +1,36 @@
+CACHE MANIFEST
+
+# Automatically cahnged build number:
+# ["1.17.1606.1901"]
+#
+# Explicitly cached 'master entries'.
+CACHE:
+#STYLES
+#lib/bootstrap/dist/css/bootstrap.min.css
+#_css/site.min.css
+#_css/site.start.min.css
+
+#IMAGES
+#public/images/arrow.png
+
+#FONTS
+#public/fonts/glyphicons-halflings-regular.woff
+
+#SCRIPTS
+lib/jquery/dist/jquery.min.js
+lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js
+lib/smooth-scroll/smooth-scroll.min.js
+lib/underscore/underscore-min.js
+
+# ...
+
+# Resources that require the user to be online.
+NETWORK:
+*
+
+
+# static.html will be served if main.py is inaccessible
+# offline.jpg will be served in place of all images in images/large/
+# offline.html will be served in place of all other .html files
+FALLBACK:
+#images/large/ images/offline.jpg
