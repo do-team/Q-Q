@@ -24,7 +24,7 @@ app.set("view engine", "ejs");   //ejs view engine
 var controlelrs = require("./controllers"); //automatically insantiate index.js
 controlelrs.init(app);
 
-console.log("listening at port 3000");
+
 module.exports = app;
 
 
@@ -39,5 +39,11 @@ app.use(function(req, res, next) {
     });
 });
 
+
+
+
 app.set('port', (process.env.PORT || 3000));
-app.listen 3000;
+
+var port=process.env.PORT || 3000;
+console.log("listening at port "+port);
+app.listen (port);
