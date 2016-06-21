@@ -39,11 +39,6 @@ app.use(function(req, res, next) {
     });
 });
 
-
-
-
-app.set('port', (process.env.PORT || 3000));
-
 var port=process.env.PORT || 3000;
 console.log("listening at port "+port);
 app.listen (port);
