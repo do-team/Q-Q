@@ -13,5 +13,3 @@ Might be also used as meeting agenda, meeting minutes, reminder or as a quick po
 Deployed to [Heroku](https://q-q.herokuapp.com/)
 
 [ToDo list, issue list, kanban.](https://huboard.com/do-team/Q-Q#/)
-
-TEST
